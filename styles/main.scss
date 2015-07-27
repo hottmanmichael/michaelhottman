@@ -1,0 +1,115 @@
+@import "modal.scss";
+$transition: .25s ease-in-out;
+
+
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.main-body {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.header {
+	height: 100px;
+	width: 100%;
+	background-color: rgba(28, 34, 39, 0.85); 
+	position: relative;
+}
+.title-box {
+	height: 100px;
+	width: 100%;
+	position: relative;;
+	margin: 0px;
+	background-color:rgb(228, 228, 228);
+}
+
+.content-box {
+	height: 700px;
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+  	margin-top: 0;
+  	background-image: url(../images/clouds.jpeg);
+  	background-size: cover;
+  	background-repeat: no-repeat;
+}
+.welcome {
+    position: relative;
+    color: #9EC0CE;
+    margin: 0;
+    padding: 25px;
+    height: 100%;
+}
+
+.menu-button {
+  font-size: 35px;
+  transform: scale(1);
+  margin: 18px;
+  position: fixed;
+  transition: all .5s ease-in-out;
+  &.open {
+  	position: fixed;
+  	transition: position .5s ease-in-out;
+  }
+  &:hover {
+  	font-size: 35px;
+  	transform: scale(1.3);
+  	transition: all 1s ease-in-out;
+  }
+}
+
+.menu-card-box {
+  	margin-left: 35%;
+  	margin-right: 35%;
+  	width: 335px;
+  	padding: 10px;
+  	height: 80px;
+  	position: relative;
+  	transition: all .5s ease-in-out;
+	&.open {
+		width: 1030px;
+		height: 500px;
+		position: fixed;
+		margin-left: 10%;
+		margin-right: 10%;
+		transition: all .5s ease-in-out;
+	}
+}
+
+.single-card-box {
+    height: 50px;
+    width: 50px;
+    display: inline;
+}
+
+.menu-card {
+	margin-left: 10px;
+	height: 50px;
+	width: 50px;
+	float: left;
+	position: relative;
+	border-radius: 4px;
+	background-color: #788182;
+	filter: drop-shadow(3px 3px 2px rgba(0,0,0,.4));
+	opacity: 1;
+	transition: all .5s ease-in-out;
+	&.open {
+		height: 250px;
+    	width: 175px;
+    	margin-left: 22px;
+    	margin-top: 60px;
+    	transition: all .5s ease-in-out;
+	}
+}
+.menu-card:hover {
+	opacity: .7;
+	transition: all 0.25s ease-in-out;
+}
